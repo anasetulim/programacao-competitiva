@@ -1,0 +1,15 @@
+l1 = list(map(int, input().split()))
+l2 = list(map(int, input().split()))
+l3 = list(map(int, input().split()))
+l4 = list(map(int, input().split()))
+l5 = list(map(int, input().split()))
+l6 = list(map(int, input().split()))
+
+time_1 = sum(l1[0]+l2[1]+l3[2]+l4[3]+l5[4]+l6[5])
+time_2 = sum(l1[1]+l2[2]+l3[3]+l4[4]+l5[5]+l6[0])
+time_3 = sum(l1[2]+l2[3]+l3[4]+l4[5]+l5[0]+l6[1])
+time_4 = sum(l1[3]+l2[4]+l3[5]+l4[0]+l5[1]+l6[2])
+time_5 = sum(l1[4]+l2[5]+l3[0]+l4[1]+l5[2]+l6[3])
+time_6 = sum(l1[5]+l2[0]+l3[1]+l4[2]+l5[3]+l6[4])
+
+print(max(time_1,time_2,time_3,time_4,time_5,time_6))
